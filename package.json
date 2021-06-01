@@ -132,7 +132,9 @@
     "postinstall": "yarn compile-contract-types",
     "start": "yarn compile-contract-types && react-scripts start",
     "storybook": "start-storybook -p 6006",
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts test --env=jsdom",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app",
